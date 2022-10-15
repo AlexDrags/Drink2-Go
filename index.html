@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="preload" href="fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css">
     <link rel="stylesheet" href="style.css">
@@ -29,7 +31,7 @@
         </div>
         <nav class="main-nav">
           <!-- Класс открытого меню без js: .main-nav__list-nojs--open; закрытого: .main-nav__list-nojs--close -->
-          <!-- .main-nav__list--open-js .main-nav__list--close-js -->
+
           <ul class="main-nav__list main-nav__list-nojs--open">
             <li class="main-nav__item"><a class="main-nav__link  main-nav__link--current" href="http://">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="http://">Каталог</a></li>
@@ -57,11 +59,11 @@
           <button class="main-nav__toggle button-menu button-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <!-- .button-menu__icon--open  -->
-            <svg class="button-menu__icon menu-js" width="60" height="60">
+            <svg class="button-menu__icon menu-js" width="60" height="60" focusable="false">
               <use xlink:href="img/sprite.svg#menu"></use>
             </svg>
             <!-- .button-menu__icon--close -->
-            <svg class="button-menu__icon close-js" width="60" height="60">
+            <svg class="button-menu__icon close-js" width="60" height="60" focusable="false">
               <use xlink:href="img/sprite.svg#close"></use>
             </svg>
           </button>
@@ -90,6 +92,11 @@
                   <span class="promo-product__new">Новинка!</span>
                   <header class="promo-product__title">Декаф Флэт Уайт</header>
                   <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                  <p class="promo-product__price-wrapper">
+                    <del class="promo-product__old-price">295₽</del>
+                    <ins class="promo-product__new-price">225₽</ins>
+                    <button class="promo-product__button button" type="button">Заказать</button>
+                  </p>
                 </section>
               </div>
               <div class="swiper-slide">
@@ -105,6 +112,11 @@
                   <span class="promo-product__new">Новинка!</span>
                   <header class="promo-product__title">Тройной Еспрессо</header>
                   <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                  <p class="promo-product__price-wrapper">
+                    <del class="promo-product__old-price">395₽</del>
+                    <ins class="promo-product__new-price">375₽</ins>
+                    <button class="promo-product__button button" type="button">Заказать</button>
+                  </p>
                 </section>
               </div>
               <div class="swiper-slide">
@@ -120,6 +132,11 @@
                   <span class="promo-product__new">Новинка!</span>
                   <header class="promo-product__title">Лавандовое Латте</header>
                   <p class="promo-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                  <p class="promo-product__price-wrapper">
+                    <del class="promo-product__old-price">285₽</del>
+                    <ins class="promo-product__new-price">265₽</ins>
+                    <button class="promo-product__button button" type="button">Заказать</button>
+                  </p>
                 </section>
               </div>
             </div>
@@ -283,7 +300,7 @@
                   <p class="products-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   <p class="products-list__wrapper">
                     <span class="products-list__price">225₽</span>
-                    <button class="button" type="button">В корзину</button>
+                    <button class="products-list__button button" type="button">В корзину</button>
                   </p>
                 </li>
                 <li class="products-list__item">
@@ -297,7 +314,7 @@
                   <p class="products-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   <p class="products-list__wrapper">
                     <span class="products-list__price">225₽</span>
-                    <button class="button" type="button">В корзину</button>
+                    <button class="products-list__button button" type="button">В корзину</button>
                   </p>
                 </li>
                 <li class="products-list__item">
@@ -311,7 +328,7 @@
                   <p class="products-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   <p class="products-list__wrapper">
                     <span class="products-list__price">225₽</span>
-                    <button class="button" type="button">В корзину</button>
+                    <button class="products-list__button button" type="button">В корзину</button>
                   </p>
                 </li>
                 <li class="products-list__item">
@@ -325,7 +342,7 @@
                   <p class="products-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   <p class="products-list__wrapper">
                     <span class="products-list__price">225₽</span>
-                    <button class="button" type="button">В корзину</button>
+                    <button class="products-list__button button" type="button">В корзину</button>
                   </p>
                 </li>
                 <li class="products-list__item">
@@ -339,7 +356,7 @@
                   <p class="products-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                   <p class="products-list__wrapper">
                     <span class="products-list__price">225₽</span>
-                    <button class="button" type="button">В корзину</button>
+                    <button class="products-list__button button" type="button">В корзину</button>
                   </p>
                 </li>
                 <li class="products-list__item">
